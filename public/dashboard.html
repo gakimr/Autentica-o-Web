@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - Autenticação Web</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/dashboard.html">AuthWeb</a>
+      <button id="logoutButton" class="button-outline" type="button">
+        Sair
+      </button>
+    </header>
+
+    <main class="dashboard">
+      <section class="welcome">
+        <p class="titulo">ÁREA PROTEGIDA</p>
+        <h1>Seu painel</h1>
+      </section>
+
+      <section class="panel">
+        <h2>Minha conta</h2>
+        <p id="userInfo" class=".texto-suave">Verificando sua sessão...</p>
+        <button id="refreshButton" type="button">
+          Verificar sessão novamente
+        </button>
+      </section>
+
+      <section class="panel">
+        <h2>Teste de autorização</h2>
+        <p class="texto-suave">
+          A rota abaixo só permite acesso ao perfil administrador.
+        </p>
+        <button id="adminButton" type="button">Listar usuários (admin)</button>
+        <pre id="result">O resultado aparecerá aqui.</pre>
+      </section>
+
+      <p id="message" class="message" role="status"></p>
+    </main>
+    <script src="/dashboard.js"></script>
+  </body>
+</html>

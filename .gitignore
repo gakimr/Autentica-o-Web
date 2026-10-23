@@ -1,0 +1,6 @@
+node_modules/
+.env
+auth.db
+auth.db-shm
+auth.db-wal
+*.log

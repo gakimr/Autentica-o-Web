@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criar conta - Autenticação Web</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="auth-layout">
+    <section class="auth-card">
+      <p class="titulo">PROJETO ACADÊMICO · PoC</p>
+      <h1>Crie sua conta</h1>
+      <p class="texto-suave">Cadastre-se para acessar a área protegida do sistema.</p>
+
+      <form id="registerForm">
+        <label for="email">E-mail</label>
+        <input id="email" type="email" autocomplete="email" required>
+
+        <label for="password">Senha</label>
+        <input id="password" type="password" autocomplete="new-password" minlength="8" required>
+        <small>Use pelo menos 8 caracteres.</small>
+
+        <label for="confirmPassword">Confirme a senha</label>
+        <input id="confirmPassword" type="password" autocomplete="new-password" minlength="8" required>
+
+        <button type="submit" class="full-button">Criar conta</button>
+      </form>
+
+      <p id="message" class="message" role="status"></p>
+      <p class="switch-page">Já tem uma conta? <a href="/login.html">Fazer login</a></p>
+    </section>
+  </main>
+  <script src="/register.js"></script>
+</body>
+</html>

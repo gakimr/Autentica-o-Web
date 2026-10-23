@@ -1,0 +1,20 @@
+{
+  "name": "autenticacao-web",
+  "version": "1.0.0",
+  "description": "PoC simples de autenticação com sessão, cookie, CSRF e níveis de acesso",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "argon2": "^0.41.1",
+    "better-sqlite3": "^12.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0"
+  }
+}
