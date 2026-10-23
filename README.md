@@ -59,7 +59,7 @@ package.json
 
 
 
-## Segurança 
+## Segurança Demonstrada
 - Senhas armazenadas com hash Argon2id.
 - Token aleatório de sessão; apenas seu hash é armazenado no banco.
 - Operações que alteram estado exigem token CSRF.
